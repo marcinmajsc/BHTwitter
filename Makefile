@@ -10,6 +10,7 @@ BHTwitter_FRAMEWORKS = UIKit Foundation AVFoundation AVKit CoreMotion GameContro
 BHTwitter_PRIVATE_FRAMEWORKS = Preferences
 BHTwitter_EXTRA_FRAMEWORKS = Cephei CepheiPrefs CepheiUI
 BHTwitter_OBJ_FILES = $(shell find lib -name '*.a')
+BHTwitter_INJECT_DYLIBS = Tweaks/TwitterNoAds.dylib
 BHTwitter_LIBRARIES = sqlite3 bz2 c++ iconv z
 BHTwitter_CFLAGS = -fobjc-arc -Wno-deprecated-declarations -Wno-nullability-completeness -Wno-unused-function -Wno-unused-property-ivar -Wno-error
 
